@@ -1,6 +1,6 @@
 import React from "react";
 
-import SHOP_DATA from "./shop.data";
+import SHOP_DATA from './shop.data';
 
 import CollectionPreview from "../../components/preview-component/collection-preview.component";
 
