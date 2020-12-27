@@ -13,22 +13,22 @@ import { HeaderContainer, LogoContainer, OptionsContainer, OptionLink } from "./
 
 const Header = ({ currentUser, hidden }) => (
   <HeaderContainer>
-    <LogoContainer to="/">
+    <LogoContainer to="/e-commerce-project/">
       <Logo className="logo" />
     </LogoContainer>
     <OptionsContainer>
-      <OptionLink to="/shop">
+      <OptionLink to="/e-commerce-project/shop">
         SHOP
       </OptionLink>
-      <OptionLink to="/shop">
+      {/* <OptionLink to="">
         CONTACT
-      </OptionLink>
+      </OptionLink> */}
       {currentUser ? (
         <OptionLink as='div' onClick={() => auth.signOut()}>
           SIGN OUT
         </OptionLink>
       ) : (
-        <OptionLink to="/signin">
+        <OptionLink to="/e-commerce-project/signin">
           SIGN IN
         </OptionLink>
       )}
