@@ -13,11 +13,11 @@ import { HeaderContainer, LogoContainer, OptionsContainer, OptionLink } from "./
 
 const Header = ({ currentUser, hidden }) => (
   <HeaderContainer>
-    <LogoContainer to="/e-commerce-project/">
+    <LogoContainer to="/">
       <Logo className="logo" />
     </LogoContainer>
     <OptionsContainer>
-      <OptionLink to="/e-commerce-project/shop">
+      <OptionLink to="/shop">
         SHOP
       </OptionLink>
       {/* <OptionLink to="">
@@ -28,7 +28,7 @@ const Header = ({ currentUser, hidden }) => (
           SIGN OUT
         </OptionLink>
       ) : (
-        <OptionLink to="/e-commerce-project/signin">
+        <OptionLink to="/signin">
           SIGN IN
         </OptionLink>
       )}
