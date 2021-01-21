@@ -31,7 +31,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "netlify deploy --prod --dir './build'",
-    "git": "git add . && git commit -m 'some new changes' && git push"
+    "git": "git add . && git commit  && git push"
   },
   "eslintConfig": {
     "extends": [
