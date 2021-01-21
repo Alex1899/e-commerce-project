@@ -7,7 +7,6 @@ import { connect } from "react-redux";
 import "./collection.styles.scss";
 
 const CollectionsPage = ({ collection }) => {
-    console.log("collecton =>>>>", collection);
   const { title, items } = collection;
   return (
     <div className="collection-page">
