@@ -19,23 +19,6 @@ import {  selectCollectionsForPreview } from './redux/shop/shop.selectors';
 class App extends React.Component {
   unsubscribeFromAuth = null;
 
-  componentDidMount() {
-    const { setCurrentUser } = this.props;
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
-      if (userAuth) {
-        const userRef = await createUserProfileDoc(userAuth);
-
-        userRef.onSnapshot((snapshot) => {
-          setCurrentUser({
-            id: snapshot.id,
-            ...snapshot.data(),
-          });
-        });
-      } else {
-        setCurrentUser( userAuth );
-      }
-    });
-  }
 
   componentWillUnmount() {
     this.unsubscribeFromAuth();
