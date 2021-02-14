@@ -10,6 +10,7 @@ import { selectCurrentUser } from "./redux/user/user.selector";
 import { createStructuredSelector } from "reselect";
 import { selectCollectionsForPreview } from "./redux/shop/shop.selectors";
 import { checkUserSession } from "./redux/user/user.actions";
+import Footer from "./components/footer/footer.component";
 
 const HomePage = lazy(() => import("./pages/homepage/homepage.component"));
 const ShopPage = lazy(() => import("./pages/shop/shop.component"));
@@ -43,6 +44,7 @@ const App = ({ checkUserSession, currentUser }) => {
           </Suspense>
         </ErrorBoundary>
       </Switch>
+      <Footer/>
     </div>
   );
 };
