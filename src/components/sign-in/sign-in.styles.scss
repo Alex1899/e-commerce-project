@@ -11,5 +11,21 @@
         display: flex;
         justify-content: space-between;
     }
+
+    @media screen and (max-width: 800px) {
+        width: 200px;
+
+        .buttons{
+            display: flex;
+            flex-direction: column;
+            
+            :last-child{
+                margin-top: 10px;
+            }
+
+            margin-bottom: 50px;
+        }
+
+    }
     
 }

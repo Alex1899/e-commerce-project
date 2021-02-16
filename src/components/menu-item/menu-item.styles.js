@@ -53,7 +53,7 @@ export const ContentContainer = styled.div`
   position: absolute;
 
   @media screen and (max-width: 800px) {
-    padding: 0 15px;
+    padding: 0 5px;
   }
 
 `;

@@ -65,7 +65,9 @@ const SignUp = ({ signUpStart }) => {
           onChange={handleChange}
           label="Confirm Password"
         ></FormInput>
-        <CustomButton type="submit">SIGN UP</CustomButton>
+        <div className="cust-btn">
+          <CustomButton type="submit">SIGN UP</CustomButton>
+        </div>
       </form>
     </div>
   );
